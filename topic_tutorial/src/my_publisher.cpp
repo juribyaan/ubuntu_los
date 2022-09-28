@@ -27,4 +27,4 @@ int main(int argc, char** argv){
     return 0;
 };
 
-//cm 하고 roscore 켜주고 퍼블리셔 스크라이버 구동
+//cm 하고 1 roscore 켜주고 2 퍼블리셔 3 스크라이버 구동
