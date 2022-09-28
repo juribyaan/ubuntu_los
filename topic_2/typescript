@@ -1,0 +1,104 @@
+Script started on 2022-09-28 15:53:08+0900
+]0;juribyaab@juribyaan-samsung-desktop-system: ~/catkin_ws/src/ubuntu_los/topic_2[01;32mjuribyaab@juribyaan-samsung-desktop-system[00m:[01;34m~/catkin_ws/src/ubuntu_los/top[Kiic_2[00m$ rqt_graph s[K[K[K[K[K[K[K[K[K[K[Ksc[K[Kcs[Kd s
+scripts/ src/     
+]0;juribyaab@juribyaan-samsung-desktop-system: ~/catkin_ws/src/ubuntu_los/topic_2[01;32mjuribyaab@juribyaan-samsung-desktop-system[00m:[01;34m~/catkin_ws/src/ubuntu_los/topiic_2[00m$ cd scripts
+]0;juribyaab@juribyaan-samsung-desktop-system: ~/catkin_ws/src/ubuntu_los/topic_2/scripts[01;32mjuribyaab@juribyaan-samsung-desktop-system[00m:[01;34m~/catkin_ws/src/ubuntu_los/topiic_2/scripts[00m$ ls -l
+합계 8
+-rw-rw-r-- 1 juribyaab juribyaab 493  9월 28 15:51 py_second_pub.py
+-rw-rw-r-- 1 juribyaab juribyaab 334  9월 28 15:51 py_second_sub.py
+]0;juribyaab@juribyaan-samsung-desktop-system: ~/catkin_ws/src/ubuntu_los/topic_2/scripts[01;32mjuribyaab@juribyaan-samsung-desktop-system[00m:[01;34m~/catkin_ws/src/ubuntu_los/topiic_2/scripts[00m$ ls --[K-
+--all
+--almost-all
+--author
+--block-size=
+--classify
+--color
+--color=
+--context
+--dereference
+--dereference-command-line
+--dereference-command-line-symlink-to-dir
+--directory
+--dired
+--More--[K--escape
+--More--[K--file-type
+--More--[K--format=
+--More--[K--group-directories-first
+--More--[K--help
+--More--[K--hide-control-chars
+--More--[K--hide=
+--More--[K--human-readable
+--More--[K--hyperlink
+--More--[K--ignore-backups
+--More--[K--ignore=
+--More--[K--indicator-style=
+--More--[K--inode
+--More--[K--kibibytes
+--More--[K--literal
+--More--[K--no-group
+--More--[K--numeric-uid-gid
+--More--[K--quote-name
+--More--[K--quoting-style=
+--More--[K--recursive
+--More--[K--reverse
+--More--[K--show-control-chars
+--More--[K--si
+--More--[K--size
+--More--[K--sort
+--More--[K--sort=
+--More--[K--tabsize=
+--More--[K--time-style=
+--More--[K--time=
+--More--[K--version
+--More--[K--width=
+]0;juribyaab@juribyaan-samsung-desktop-system: ~/catkin_ws/src/ubuntu_los/topic_2/scripts[01;32mjuribyaab@juribyaan-samsung-desktop-system[00m:[01;34m~/catkin_ws/src/ubuntu_los/topiic_2/scripts[00m$ ls --[K[Kpy_second_[K[K[K[K[K[K[K[K[K[K-a
+[0m[01;34m.[0m  [01;34m..[0m  py_second_pub.py  py_second_sub.py
+]0;juribyaab@juribyaan-samsung-desktop-system: ~/catkin_ws/src/ubuntu_los/topic_2/scripts[01;32mjuribyaab@juribyaan-samsung-desktop-system[00m:[01;34m~/catkin_ws/src/ubuntu_los/topiic_2/scripts[00m$ ls -a[Kx *a
+ls: '*a'에 접근할 수 없습니다: 그런 파일이나 디렉터리가 없습니다
+]0;juribyaab@juribyaan-samsung-desktop-system: ~/catkin_ws/src/ubuntu_los/topic_2/scripts[01;32mjuribyaab@juribyaan-samsung-desktop-system[00m:[01;34m~/catkin_ws/src/ubuntu_los/topiic_2/scripts[00m$ ls -x *a[K[K[K[Ka[K[K[K
+ls           lscpu        lsipc        lsmod        lspcmcia
+lsattr       lsdiff       lslocks      lsns         lspgpot
+lsb_release  lshw         lslogins     lsof         lsusb
+lsblk        lsinitramfs  lsmem        lspci        
+]0;juribyaab@juribyaan-samsung-desktop-system: ~/catkin_ws/src/ubuntu_los/topic_2/scripts[01;32mjuribyaab@juribyaan-samsung-desktop-system[00m:[01;34m~/catkin_ws/src/ubuntu_los/topiic_2/scripts[00m$ ls -x[Ka[K*[K[K*py_second_pub.py py_second_[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K녀[Ksudo chmod py_second_[K[K[K[K[K[K[K[K[K[K*
+[sudo] juribyaab의 암호: 
+chmod: 잘못된 모드: `py_second_pub.py'
+Try 'chmod --help' for more information.
+]0;juribyaab@juribyaan-samsung-desktop-system: ~/catkin_ws/src/ubuntu_los/topic_2/scripts[01;32mjuribyaab@juribyaan-samsung-desktop-system[00m:[01;34m~/catkin_ws/src/ubuntu_los/topiic_2/scripts[00m$ cj[Khmod --help
+사용법: chmod [옵션]... MODE[,MODE]... FILE...
+  또는: chmod [옵션]... 8진수-MODE FILE...
+  또는: chmod [옵션]... --reference=RFILE FILE...
+Change the mode of each FILE to MODE.
+With --reference, change the mode of each FILE to that of RFILE.
+
+  -c, --changes          like verbose but report only when a change is made
+  -f, --silent, --quiet  suppress most error messages
+  -v, --verbose          output a diagnostic for every file processed
+      --no-preserve-root  do not treat '/' specially (the default)
+      --preserve-root    fail to operate recursively on '/'
+      --reference=RFILE  use RFILE's mode instead of MODE values
+  -R, --recursive        change files and directories recursively
+      --help     이 도움말을 표시하고 끝냅니다
+      --version  버전 정보를 출력하고 끝냅니다
+
+Each MODE is of the form '[ugoa]*([-+=]([rwxXst]*|[ugo]))+|[-+=][0-7]+'.
+
+GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
+Report chmod translation bugs to <http://translationproject.org/team/>
+Full documentation at: <http://www.gnu.org/software/coreutils/chmod>
+or available locally via: info '(coreutils) chmod invocation'
+]0;juribyaab@juribyaan-samsung-desktop-system: ~/catkin_ws/src/ubuntu_los/topic_2/scripts[01;32mjuribyaab@juribyaan-samsung-desktop-system[00m:[01;34m~/catkin_ws/src/ubuntu_los/topiic_2/scripts[00m$ [K[A]0;juribyaab@juribyaan-samsung-desktop-system: ~/catkin_ws/src/ubuntu_los/topic_2/scripts[01;32mjuribyaab@juribyaan-samsung-desktop-system[00m:[01;34m~/catkin_ws/src/ubuntu_los/topiic_2/scripts[00m$ [K[A]0;juribyaab@juribyaan-samsung-desktop-system: ~/catkin_ws/src/ubuntu_los/topic_2/scripts[01;32mjuribyaab@juribyaan-samsung-desktop-system[00m:[01;34m~/catkin_ws/src/ubuntu_los/topiic_2/scripts[00m$ [K[A]0;juribyaab@juribyaan-samsung-desktop-system: ~/catkin_ws/src/ubuntu_los/topic_2/scripts[01;32mjuribyaab@juribyaan-samsung-desktop-system[00m:[01;34m~/catkin_ws/src/ubuntu_los/topic_2/scripts[00m$ chmod ---help[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C  +x
+chmod: `+x' 뒤에 명령어가 빠짐
+Try 'chmod --help' for more information.
+]0;juribyaab@juribyaan-samsung-desktop-system: ~/catkin_ws/src/ubuntu_los/topic_2/scripts[01;32mjuribyaab@juribyaan-samsung-desktop-system[00m:[01;34m~/catkin_ws/src/ubuntu_los/topic_2/scripts[00m$ chmod ++x a
+chmod: 'a'에 접근할 수 없습니다: 그런 파일이나 디렉터리가 없습니다
+]0;juribyaab@juribyaan-samsung-desktop-system: ~/catkin_ws/src/ubuntu_los/topic_2/scripts[01;32mjuribyaab@juribyaan-samsung-desktop-system[00m:[01;34m~/catkin_ws/src/ubuntu_los/topic_2/scripts[00m$ chmod ++x a[K[Ka
+chmod: `+xa' 뒤에 명령어가 빠짐
+Try 'chmod --help' for more information.
+]0;juribyaab@juribyaan-samsung-desktop-system: ~/catkin_ws/src/ubuntu_los/topic_2/scripts[01;32mjuribyaab@juribyaan-samsung-desktop-system[00m:[01;34m~/catkin_ws/src/ubuntu_los/topic_2/scripts[00m$ chmod ++xa[K *
+]0;juribyaab@juribyaan-samsung-desktop-system: ~/catkin_ws/src/ubuntu_los/topic_2/scripts[01;32mjuribyaab@juribyaan-samsung-desktop-system[00m:[01;34m~/catkin_ws/src/ubuntu_los/topic_2/scripts[00m$ ls
+[0m[01;32mpy_second_pub.py[0m  [01;32mpy_second_sub.py[0m
+]0;juribyaab@juribyaan-samsung-desktop-system: ~/catkin_ws/src/ubuntu_los/topic_2/scripts[01;32mjuribyaab@juribyaan-samsung-desktop-system[00m:[01;34m~/catkin_ws/src/ubuntu_los/topic_2/scripts[00m$ ls -l
+합계 8
+-rwxrwxr-x 1 juribyaab juribya
