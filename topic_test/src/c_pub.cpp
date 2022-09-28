@@ -15,11 +15,12 @@ int main(int argc, char** argv)
     {   
         
         pub.publish(msg);
+        msg.data++;
         loop_rate.sleep();
-        if ( msg.data == 100){
+        if ( msg.data >= 101){
             msg.data =0;
         }
-        msg.data++;
+        
     }
     
     return 0;
