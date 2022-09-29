@@ -1,11 +1,10 @@
-#!usr/bin/python
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 import rospy
 from msg_tutorial.msg import Mymsg
 
 def msg_talker():
     rospy.init_node("py_m_p");
-    rospy.loginfo("Starting RosNode.");
     pub = rospy.Publisher("hallung", Mymsg, queue_size=10);
     loop_rate = rospy.Rate(5);
     msg = Mymsg();
