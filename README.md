@@ -14,3 +14,7 @@ topic_test 과제 패키지
 # -*- coding: utf-8 -*-
 
 chmod +x * 권한
+
+-0929
+[msg_tutorial](./msg_tutorial/)
+    msg_tutorial 패키지 만들고 msg에 Mymsg.msg 만들고 노드 만들고 실행해봄
