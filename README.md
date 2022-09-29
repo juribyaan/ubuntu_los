@@ -30,3 +30,4 @@ srv 파일
             아랫부분은 response 로 구분해놓음.
             *message는 다 보내므로 구분 x
 
+rospy.ServiceProxy 서비스 생성

@@ -11,8 +11,8 @@ def add(req):
     return AddTwointsResponse(result);
 
 def mainServer():
-    rospy.init_node('My_pyservice');
-    my_server = rospy.service("service_channel_1",AddTwoints, add);
+    rospy.init_node("My_pyservice");
+    rospy.Service("service_channel_1",AddTwoints, add);
     rospy.loginfo('service server ready');
     rospy.spin();
     
