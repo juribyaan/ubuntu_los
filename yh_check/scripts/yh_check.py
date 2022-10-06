@@ -25,3 +25,6 @@ if __name__ == "__main__":
     rospy.init_node("yh_check");
     my_check = Mycheck();
     rospy.spin();
+
+    my1 = Mycheck()
+    my1.distanceCallback(1)

@@ -1,0 +1,9 @@
+<launch>
+    <node pkg="turtlesim" type="turtlesim_node" name="geobookE" />
+    <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop_twist_keyboard" />
+    <node pkg="yh_turtle" type="turtle_keyboard_clear" name="turtle_keyboard_clear" />
+    <param name="geobookE/background_r" value="255"/>
+    <param name="geobookE/background_g" value="30"/>
+    <param name="geobookE/background_b" value="100"/>
+    
+</launch>

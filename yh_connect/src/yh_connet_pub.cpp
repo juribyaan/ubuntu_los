@@ -15,7 +15,7 @@ int main(int argc, char** argv)
         pub.publish(msg);
         msg.data++;
         loop_rate.sleep();
-    };
+    }
     
     
     return 0;
