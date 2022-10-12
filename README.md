@@ -43,3 +43,6 @@ rosservice list
     rosservice call /reset
     rosservice call /spawn
     rosservice call /clear
+
+우분투 arduino 세팅
+    https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all
