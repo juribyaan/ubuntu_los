@@ -19,34 +19,35 @@ for i in range(word_len):
     shap_list.insert(A+i,word[i])
 
 # while True:
-#     for i in shap_list[0 : 5]:
+#     for i in shap_list[0 : 7]:
 #         print(i , end='')
 #     print('')
 #     a = shap_list.pop(0)
 #     shap_list.append(a)
 #     time.sleep(1)
-#     os.system('clear')
-
-# while True:
-#     for i in range (word_len-1):
-#         a = word_list.pop(i)
-#         word_list.insert(i+1,a)
-#         # print(word_list[i] , end='')
-#         for i in range(word_len):
-#             print(word_list[i] , end='')
-#         print('')
-#         time.sleep(1)
-#         os.system('clear')
+    # os.system('clear')
+    
 
 while True:
-    for i in word_list:
-        print(i , end='')
+    for i in range (word_len-1):
         a = word_list.pop(i)
         word_list.insert(i+1,a)
         # print(word_list[i] , end='')
-    print('')
-    time.sleep(1)
-    os.system('clear')
+        for i in range(word_len):
+            print(word_list[i] , end='')
+        print('')
+        time.sleep(1)
+        # os.system('clear')
+
+# while True:
+#     for i in word_list:
+#         print(i , end='')
+#         a = word_list.pop(i)
+#         word_list.insert(i+1,a)
+#         # print(word_list[i] , end='')
+#     print('')
+#     time.sleep(1)
+#     os.system('clear')
 
 
 
