@@ -46,3 +46,14 @@ rosservice list
 
 우분투 arduino 세팅
     https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all
+
+
+o x o x x x x o F
+o o o x x o o o x
+o x o x o o x o x
+o o o o o x x o o
+x x x x o o x x x
+o o o o x o o o o
+x o x o o o x o x
+o o o o x o o o x
+P x x o o x x o x
