@@ -19,7 +19,7 @@ for i in range(word_len):
     shap_list.insert(A+i,word[i])
 
 #ex1
-# while True:
+# while True:e  
 #     for i in shap_list[0 : 5]: //출력 칸 조절
 #         print(i , end='')
 #     print('')
@@ -39,21 +39,3 @@ for i in range(word_len):
 #         print('')
 #         time.sleep(1)
 #         os.system('clear')
-
-while True:
-    for i in word_list:
-        print(i , end='')
-        a = word_list.pop(i)
-        word_list.insert(i+1,a)
-        # print(word_list[i] , end='')
-    print('')
-    time.sleep(1)
-    os.system('clear')
-
-
-
-
-    
-
-    
-
