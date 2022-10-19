@@ -1,8 +1,8 @@
-f2 = open("playMaze" , 'w');
+f2 = open("playMaze.txt" , 'w');
 f2.close();
 
-f1 = open("maze" , 'r')
-f2 = open("playMaze" , 'w')
+f1 = open("maze.txt" , 'r')
+f2 = open("playMaze.txt" , 'w')
 
 mapreads = f1.readlines()
 for mapread in mapreads:
