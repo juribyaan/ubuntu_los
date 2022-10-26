@@ -57,3 +57,11 @@ o o o o x o o o o
 x o x o o o x o x
 o o o o x o o o x
 P x x o o x x o x
+
+패키지 설정 공유
+pip freeze
+
+pip freeze > requirements.txt
+
+pip install -r requirements.txt
+
