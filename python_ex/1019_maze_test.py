@@ -1,135 +1,94 @@
-f1 = open("maze" , 'r')
+f1 = open("maze.txt" , 'r')
 lines = f1.readlines()
 f1.close()
 lines
-#불러온거 문자열로 바꾸고 공백 추가
+X_point = len(lines)
+X_point
+
+#리스트를 문자열로 바꾼뒤 줄바꿈 지우고 가공
 line = " ".join(lines)
-line = " ".join(line)
 line
-#공백 지우고 가공
-line = line.replace(" ","")
-line = " ".join(line)
+line = line.replace("\n","")
 list_line = line.split(" ")
-line
+
 #list
 list_line
-#문자열
-str_line = " ".join(list_line)
-str_line
+len(list_line)
+Y_point = len(list_line)/X_point
+Y_point = round(Y_point)
+Y_point
 
-start_p = list_line.index('S')
-# start_p
+for x in range(1차):
+    for y in range(len):
+        
+#맵 2차 리스트로
+maze_map = list()
+X = 0
+Y = X_point
+for i in range(X,Y_point):
+    maze_map.append(list_line[ X : Y ])
+    print(i ,end=" ")
+    print("X",X ,end="")
+    print(" Y",Y)
+    X = +Y
+    Y += X_point
+maze_map
+# print(" ".join(maze_map))
+               
+for i in range(X_point):
+    for j in range(Y_point):
+        print("[ %d : %d ]" %(i,j) , end=" ")
+    # print("")
+        print(maze_map[i][j],end="")
+        if maze_map[i][j]=='S':
+            # print(maze_map[i][j])
+            Start_P = maze_map[i].pop(j)
+            maze_map[i].insert(j,'P')
 
-#플레이어 넣어주고
-list_line.insert(start_p,'P')
-player = list_line.index('P')
-next = list_line.pop(start_p+1)
-next
-
-for i in list_line:
-    print(i,end="")
-
-class move(x):
-    x=x
-    def right():
-        player = list_line.index('P')
-        list_line.insert(player,next)
-        next = list_line.pop(player+1)
-        list_line.insert(player+1,next)
-        player = list_line.index('P')
-        next = list_line.pop(player+1)
-        for i in list_line:
-            print(i,end="")
-
-        return list_line
-            
-    def left():
-        player = list_line.index('P')
-        list_line.insert(player,next)
-        player = list_line.index('P')
-        next = list_line.pop(player)
-        list_line.insert(player-1,next)
-        player = list_line.index('P')
-        next = list_line.pop(player-1)
-        for i in list_line:
-            print(i,end="")
-
-    if x == 3:
-        player = list_line.index('P')
-        list_line.insert(player+1, next)
-        player = list_line.index('P')
-        next = list_line.pop(player)
-        list_line.insert(player+10,next)
-        player = list_line.index('P')
-        next = list_line.pop(player+1)
-        for i in list_line: 
-            print(i,end="")
-
-    if x == 4:
-        player = list_line.index('P')
-        player
-        next
-        list_line.insert(player, next)
-        next = list_line.pop(player+1)
-        list_line.insert(player-9,next)
-        player = list_line.index('P')
-        next = list_line.pop(player-1)
-        for i in list_line: 
-            print(i,end="")
-    
-
+next_P = Start_P
 def main():
-    while next != 'x':
+    #초기 S 에 P 놓기
+    while True:
+        for i in range(X_point):
+            for j in range(Y_point):
+                # print("[ %d : %d ]" %(i,j) , end=" ")
+                print(maze_map[i][j],end="")
+            print("")
+        #P꺼내기    
         print("어디로 갈까?")
         print("1. 동 쪽으로")
         print("2. 서 쪽으로")
         print("3. 남 쪽으로")
-        print("4. 북 쪽으로")
-        
+        print("4. 북 쪽으로")        
         x = int(input())
-        m = move()
-        m.right
-
-        if x == 1:
-            player = list_line.index('P')
-            list_line.insert(player,next)
-            next = list_line.pop(player+1)
-            list_line.insert(player+1,next)
-            player = list_line.index('P')
-            next = list_line.pop(player+1)
-            for i in list_line:
-                print(i,end="")
+                
+        for i in range(X_point):
+            for j in range(Y_point):
+                # print("[ %d : %d ]" %(i,j) , end=" ")
+                # print(maze_map[i][j],end="")
+                if maze_map[i][j]=='P':
+                    print(maze_map[i][j])
+                    Player = maze_map[i].pop(j)
+                    maze_map[i].insert(j,next_P)
+                    
+                    next_P = maze_map[i+1].pop(j)
+                    maze_map[i+1].insert(j,Player)
+                    
+                    if x == 1:
+                        next_P = maze_map[i].pop(j+1)
+                        maze_map[i].insert(j+1,Player)    
+                    elif x == 2:
+                        maze_map[i].insert(j,next_P)
+                        maze_map[i].insert(j,next_P)    
+                    elif x == 3:
+                        maze_map[i].insert(j,next_P)
+                        maze_map[i].insert(j,next_P)    
+                    elif x == 4:
+                        maze_map[i].insert(j,next_P)
+                        maze_map[i].insert(j,next_P)    
+                    else: print("다시골라")
+                    
+                    
+            
         
-        if x == 2:
-            player = list_line.index('P')
-            list_line.insert(player,next)
-            player = list_line.index('P')
-            next = list_line.pop(player)
-            list_line.insert(player-1,next)
-            player = list_line.index('P')
-            next = list_line.pop(player-1)
-            for i in list_line:
-                print(i,end="")
-
-        if x == 3:
-            player = list_line.index('P')
-            list_line.insert(player+1, next)
-            player = list_line.index('P')
-            next = list_line.pop(player)
-            list_line.insert(player+10,next)
-            player = list_line.index('P')
-            next = list_line.pop(player+1)
-            for i in list_line: 
-                print(i,end="")
-
-        if x == 4:
-            player = list_line.index('P')
-            player
-            next
-            list_line.insert(player, next)
-            next = list_line.pop(player+1)
-            list_line.insert(player-9,next)
-            player = list_line.index('P')
-            next = list_line.pop(player-1)
-            for i in list_line: 
-                print(i,end="")
+        
