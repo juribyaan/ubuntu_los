@@ -1,4 +1,7 @@
 # ubuntu_los
+명령어만들기
+gedit .bashrc
+
 cm roscore
 rosrun 파일 노드
 
@@ -57,6 +60,11 @@ o o o o x o o o o
 x o x o o o x o x
 o o o o x o o o x
 P x x o o x x o x
+
+가상환경
+sudo apt-get install python3-venv
+python -m venv venv
+source ./venv/bin/activate
 
 패키지 설정 공유
 pip freeze
