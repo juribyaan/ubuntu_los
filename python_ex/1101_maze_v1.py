@@ -1,15 +1,16 @@
 import os
-f = open("maze.txt", 'w')
-f.write(o x o x x x x o F
-o o o x x o o o x
-o x o x o o x o x
-o o o o o x x o o
-x x x x o o x x x
-o o o o x o o o o
-x o x o o o x o x
-o o o o x o o o x
-S x x o o x x o x)
-f.close()
+# f = open("maze.txt", 'w')
+# f.write(o x o x x x x o F
+# o o o x x o o o x
+# o x o x o o x o x
+# o o o o o x x o o
+# x x x x o o x x x
+# o o o o x o o o o
+# x o x o o o x o x
+# o o o o x o o o x
+# S x x o o x x o x)
+# f.close()
+
 f1 = open("/home/juribyaab/catkin_ws/maze.txt" , 'r')
 lines = f1.readlines()
 f1.close()
