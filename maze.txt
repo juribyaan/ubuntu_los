@@ -6,4 +6,4 @@ x x x x o o x x x
 o o o o x o o o o
 x o x o o o x o x
 o o o o x o o o x
-P x x o o x x o x
+S x x o o x x o x
