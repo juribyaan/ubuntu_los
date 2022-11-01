@@ -13,13 +13,11 @@ list_line = line.split(" ")
 
 #list
 list_line
-len(list_line)
+print(len(list_line))
+list_line.index('S')
 Y_point = len(list_line)/X_point
 Y_point = round(Y_point)
 Y_point
-
-for x in range(1차):
-    for y in range(len):
         
 #맵 2차 리스트로
 maze_map = list()
@@ -33,6 +31,9 @@ for i in range(X,Y_point):
     X = +Y
     Y += X_point
 maze_map
+type(maze_map)
+maze_map[0].index('F')
+maze_map[8].index('P')
 # print(" ".join(maze_map))
                
 for i in range(X_point):
@@ -45,7 +46,29 @@ for i in range(X_point):
             Start_P = maze_map[i].pop(j)
             maze_map[i].insert(j,'P')
 
-next_P = Start_P
+
+# next_P = Start_P
+
+class Move():
+    global X_point
+    global Y_point
+    global maze_map        
+    for i in range(X_point):
+        maze_map[i].index('P')
+        x = i
+        y = j
+        print( x, y )
+
+    for i in range(X_point):
+        for j in maze_map:
+            j[i].index('P')
+            if j[i] == 'P'
+                x=i
+                y=j
+                break
+    print( x , y )
+        
+    
 def main():
     #초기 S 에 P 놓기
     while True:
