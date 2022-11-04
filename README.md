@@ -61,10 +61,6 @@ x o x o o o x o x
 o o o o x o o o x
 P x x o o x x o x
 
-가상환경
-sudo apt-get install python3-venv
-python -m venv venv
-source ./venv/bin/activate
 
 패키지 설정 공유
 pip freeze
@@ -90,8 +86,17 @@ $ sudo -H pip3 install --upgrade --ignore-installed pip setuptools
 
 //$ sudo pip3 install --upgrade pip
 
-$ python3 -m venv venv
-$ source ./venv/bin/activate
+가상환경
+sudo apt-get install python3-venv
+python -m venv venv
+source ./venv/bin/activate
+python3 -m venv venv
+source ./venv/bin/activate
+
+sudo apt-get install python3.10-venv
+python3.10 -m venv venv
+source ./venv/bin/activate
+
 
 //버전 및 설치 확인 (pip의 경로가 가상환경 경로와 일치해야함)
 (가상환경) $ pip -V
@@ -124,3 +129,11 @@ $ pip install opencv-contrib-python==3.4.1.15
 
 // matplotlib 설치
 $ pip install matplotlib
+
+
+        # self._likes = self._ydl_info['like_count']
+        self._likes = self._ydl_info.get('like_count', 0)
+        # self._dislikes = self._ydl_info['dislike_count']
+        self._dislikes = self._ydl_info.get('dislike_count',0)
+// 1104.py 관련
+https://velog.io/@bangsy/Python-OpenCV-4
