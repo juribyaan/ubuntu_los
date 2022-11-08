@@ -87,11 +87,11 @@ $ sudo -H pip3 install --upgrade --ignore-installed pip setuptools
 //$ sudo pip3 install --upgrade pip
 
 가상환경
-sudo apt-get install python3-venv
+<!-- sudo apt-get install python3-venv
 python -m venv venv
 source ./venv/bin/activate
 python3 -m venv venv
-source ./venv/bin/activate
+source ./venv/bin/activate -->
 
 sudo apt-get install python3.10-venv
 python3.10 -m venv venv
