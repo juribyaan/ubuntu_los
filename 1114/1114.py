@@ -23,7 +23,7 @@ for R in range(min,r):
         for P in range(min,p):
             F_cost = Y*yellow_F + R*red_F + P*puple_F
             if cost < F_cost and (R*2 == Y or Y/3 == P) and F_cost < max:
-                print(R,Y,P , R*red_F+Y*yellow_F+P*puple_F)
+                print(R,Y,P , F_cost)
                 break
             
 

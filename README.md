@@ -105,7 +105,10 @@ source ./venv/bin/activate
 
 
 //윈도우
-
+python.exe -m pip install --upgrade pip
+pip install opencv-contrib-python
+pip install cmake
+pip install dlib
 //가상환경 설정
 $ python -m venv venv
 //활성화
