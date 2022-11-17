@@ -65,7 +65,7 @@ def solution(cards):
             cards2.append(G_size)
             print(i)
             
-    if len(cards2) > 2:
+    if len(cards2) > 1:
         max1 = cards2.pop(cards2.index(max(cards2)))
         print('max1',max1)
 
@@ -74,7 +74,7 @@ def solution(cards):
         answer = max1 * max2
     else:
         answer = 0
-    print(cards2)
+    # print(cards2)
         
         
         
