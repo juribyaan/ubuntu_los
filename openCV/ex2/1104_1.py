@@ -3,7 +3,7 @@
 import cv2
 import numpy as np
 
-imageFile = '/home/juribyaab/catkin_ws/src/ubuntu_los/openCV/data/lena.jpg'
+imageFile = 'C:/Users/505/ubuntu_los/openCV/data/lena.jpg'
 img = cv2.imread(imageFile)
 
 # cv2.IMREAD_UNCHANGED == -1, cv2.IMREAD_GRAYSCALE == 0, cv2.IMREAD_COLOR == 1

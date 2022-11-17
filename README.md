@@ -140,3 +140,7 @@ $ pip install matplotlib
         self._dislikes = self._ydl_info.get('dislike_count',0)
 // 1104.py 관련
 https://velog.io/@bangsy/Python-OpenCV-4
+
+openCV설명
+https://koreapy.tistory.com/1186
+https://076923.github.io/posts/Python-opencv-15/

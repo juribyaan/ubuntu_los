@@ -3,7 +3,7 @@
 import cv2
 from matplotlib import pyplot as plt
 
-path = '/home/juribyaab/catkin_ws/src/ubuntu_los/openCV/data'
+path = 'C:/Users/505/ubuntu_los/openCV/data'
 imgBGR1 = cv2.imread(path + 'lena.jpg')
 imgBGR2 = cv2.imread(path + 'apple.jpg')
 imgBGR3 = cv2.imread(path + 'baboon.jpg')
@@ -16,7 +16,7 @@ imgRGB3 = cv2.cvtColor(imgBGR3, cv2.COLOR_BGR2RGB)
 imgRGB4 = cv2.cvtColor(imgBGR4, cv2.COLOR_BGR2RGB)
 
 fig, ax = plt.subplots(2,2, figsize = (10,10), sharey = True)
-fig.canvas.manager.set_window_title("Sample Pictures")
+fig.canvas.manager.set_window_title("head")
 
 ax[0][0].axis('off')
 ax[0][0].imshow(imgRGB1, aspect='auto')
@@ -32,6 +32,7 @@ ax[1][1].imshow(imgRGB4, aspect='auto')
 
 plt.subplots_adjust(left=0, bottom=0, right=1, top=1, wspace=0.05, hspace=0.05)
 
-plt.savefig("/home/juribyaab/catkin_ws/src/ubuntu_los/openCV/data/0206.png", bbox_inches = 'tight')
+# plt.savefig("C:/Users/505/ubuntu_los/openCV/data/0206.png", bbox_inches = 'tight')
 # plt.savefig("./data/0206.png")
+
 plt.show()
